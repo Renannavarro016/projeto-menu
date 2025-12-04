@@ -32,6 +32,7 @@ header nav ul {
     justify-content: flex-end;
     flex-flow: row nowrap;
     align-content: center;
+    transition: all 0.3s;
 }
 
 header nav ul li {
