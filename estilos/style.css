@@ -9,6 +9,7 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #dbdbdb;
+    overflow-x: hidden;
 }
 
 header {
@@ -16,13 +17,14 @@ header {
     justify-content: space-between;
     flex-flow: row wrap;
     align-items: center;
-    background-color: rgba(47, 79, 79, 0.781);
+    background-image: linear-gradient(to bottom, #00BFFF, #1E90FF, #6495ED);
     padding: 15px 0px;
 }
 
 header h1 {
     color: white;
-    margin-left: 10px;
+    margin-left: 20px;
+    font-size: 2.3em
 }
 
 header nav ul {
@@ -37,33 +39,49 @@ header nav ul {
 
 header nav ul li {
     margin: 8px;
-    padding: 8px;
-    background-color: white;
+    padding: 2px;
     border-radius: 7px;
     font-size: 18px;
+    font-weight: 600;
     flex: 0 0 auto;
     transition: all 0.4s ease-in-out;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.329);
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.856);
+    color: white;
     transition: all 0.3s ease-in-out;
 }
 
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform .5s;
+} 
+
+header nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 header nav ul li a:hover {
-    color: teal;
+    color: white;
 }
 
 header .itens li:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 }
 
 main {
     background-color: white;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     text-align: justify;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.329);

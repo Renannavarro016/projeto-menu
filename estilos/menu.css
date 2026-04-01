@@ -12,6 +12,7 @@
         align-items: center;
         width: 100vw;
         transition: all 0.3s;
+        padding: 20px;
     }
 
     header nav ul li {
@@ -19,5 +20,21 @@
         width: 80vw;
         text-align: center;
         transition: all 0.3s;
+        padding: 10px;
+    }
+
+    header nav ul li a {
+      background-color: #1E90FF;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    header nav ul li a::after {
+        display: none;
+    }
+
+    header nav ul li a:hover {
+        color: #78a0eb;
     }
 }
