@@ -1,23 +1,35 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 580px) {
+
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    
+    header {
+        width: 100%;
+    }
     
     header h1 {
         text-align: center;
-        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
     }
 
     header nav ul {
         flex-flow: column wrap;
         align-items: center;
-        width: 100vw;
-        transition: all 0.3s;
-        padding: 20px;
+        text-align: center;
+        width: fit-content;
+        padding: 10px;
     }
 
     header nav ul li {
         font-size: 16px;
-        width: 80vw;
+        width: 85vw;
         text-align: center;
         transition: all 0.3s;
         padding: 10px;
@@ -28,6 +40,7 @@
       color: white;
       padding: 10px;
       border-radius: 10px;
+      width: fit-content;
     }
 
     header nav ul li a::after {
@@ -36,5 +49,6 @@
 
     header nav ul li a:hover {
         color: #78a0eb;
+        width: fit-content;
     }
 }

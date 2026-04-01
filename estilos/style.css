@@ -9,7 +9,7 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #dbdbdb;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 header {
@@ -18,39 +18,32 @@ header {
     flex-flow: row wrap;
     align-items: center;
     background-image: linear-gradient(to bottom, #00BFFF, #1E90FF, #6495ED);
-    padding: 15px 0px;
+    padding: 15px;
+    width: 100%;
 }
 
 header h1 {
     color: white;
-    margin-left: 20px;
-    font-size: 2.3em
+    margin-left: 10px;
+    font-size: 2.2em
 }
 
 header nav ul {
-    margin: 2px;
     list-style: none;
     display: flex;
     justify-content: flex-end;
     flex-flow: row nowrap;
-    align-content: center;
-    transition: all 0.3s;
 }
 
 header nav ul li {
-    margin: 8px;
-    padding: 2px;
-    border-radius: 7px;
-    font-size: 18px;
+    margin: 5px;
     font-weight: 600;
-    flex: 0 0 auto;
     transition: all 0.4s ease-in-out;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: white;
-    transition: all 0.3s ease-in-out;
 }
 
 header nav ul li a::after {
@@ -70,24 +63,22 @@ header nav ul li a:hover::after {
     transform-origin: left;
 }
 
-header nav ul li a:hover {
-    color: white;
-}
-
 header .itens li:hover {
     transform: translateY(-3px);
 }
 
 main {
     background-color: white;
-    margin: 10px;
-    padding: 20px;
+    margin: 25px 20px 25px 20px;
+    padding: 10px;
     border-radius: 10px;
     text-align: justify;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.329);
+    overflow: hidden;
 }
 
 main h2 {
     font-size: 27px;
+    margin-bottom: 20px;
 }
 
